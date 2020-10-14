@@ -1,8 +1,16 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+title: Jack's Workshop Portfolio
+layout: default
 ---
 
-Test
+# Welcome to my portfolio
+
+Hi I'm Jack, I like riding my bike
+
+Hobbies:
+
+* Swimming
+* Sleeping
+* Cooking
+
+![A photo of me smiling](/images/jack.JPG)
