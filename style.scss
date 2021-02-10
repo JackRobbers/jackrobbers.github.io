@@ -8,10 +8,10 @@ h1, p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-li {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: $site-red;
-}
+// li {
+//     font-family: Verdana, Geneva, Tahoma, sans-serif;
+//     color: $site-red;
+// }
 
 img {
     width: 25%;
@@ -55,4 +55,9 @@ nav {
         color: $site-white;
         font-size: 2em;
     }
+}
+
+.columns-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
