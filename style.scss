@@ -4,36 +4,33 @@
 $site-red: #e03f3f;
 $site-white: #ffffff;
 
-h1, p {
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-// li {
-//     font-family: Verdana, Geneva, Tahoma, sans-serif;
-//     color: $site-red;
-// }
+#post-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    h2, h3 {
+        margin-top: 0.25rem;
+        margin-bottom: 0;
+    }
+    // makes the date wrap first
+    div {
+        display: flex;
+        align-items: flex-end;
+        flex-flow: row wrap;
+        gap: 0.5rem;
+    }
+    p {
+        margin-top: 0;
+    }
+}
 
 img {
     width: 25%;
     border: $site-red solid 5px;
-}
-
-#projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.project-container {
-    background-color: $site-red;
-    padding: 5px;
-    h2, p {
-        color: $site-white;
-    }
-    h2 {
-
-        text-align: center;
-    }
 }
 
 body {
@@ -42,7 +39,15 @@ body {
 
 main {
     margin: auto;
-    width: 80%;
+    max-width: 70%;
+    @media only screen and (max-device-width: 480px) {
+        max-width: 95%;
+        background: #bada55;
+      }
+    h1 {
+        margin-bottom: 0.25rem;
+        color: $site-red
+    }
 }
 
 nav {
