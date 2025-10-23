@@ -48,3 +48,6 @@ defaults:
       path: "_posts"
     values:
       layout: "blog"
+
+collections:
+  - ttt
