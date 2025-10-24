@@ -5,63 +5,81 @@ $site-red: #e03f3f;
 $site-white: #ffffff;
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    color: $site-red
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p,
+  a,
+  h2,
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 #post-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-    h2, h3 {
-        margin-top: 0.25rem;
-        margin-bottom: 0;
-    }
-    // makes the date wrap first
-    div {
-        display: flex;
-        align-items: flex-end;
-        flex-flow: row wrap;
-        gap: 0.5rem;
-    }
-    p {
-        margin-top: 0;
-    }
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  h2,
+  h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+  }
+  // makes the date wrap first
+  div {
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+  }
+  p {
+    margin-top: 0;
+  }
 }
 
-img {
-    width: 25%;
-    border: $site-red solid 5px;
-}
+// img {
+//     width: 25%;
+//     border: $site-red solid 5px;
+// }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 main {
-    margin: auto;
-    max-width: 70%;
-    @media only screen and (max-device-width: 480px) {
-        max-width: 95%;
-      }
-    h1 {
-        margin-bottom: 0.25rem;
-        color: $site-red
-    }
+  margin: auto;
+  max-width: 70%;
+  @media only screen and (max-device-width: 480px) {
+    max-width: 95%;
+  }
+  h1 {
+    margin-bottom: 0.25rem;
+    color: $site-red;
+  }
 }
 
 nav {
-    background-color: $site-red;
+  background-color: $site-red;
 
-    a {
-        margin: 5px 10px 5px 10px;
-        display: inline-block;
-        text-decoration: none;
-        color: $site-white;
-        font-size: 2em;
-    }
+  a {
+    margin: 5px 10px 5px 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: $site-white;
+    font-size: 2em;
+  }
 }
 
 .columns-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
