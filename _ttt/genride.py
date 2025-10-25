@@ -22,13 +22,6 @@ if __name__ == "__main__":
                     swim: ??? # (did you swim? yes/no)
                     venue: # (where you ended up or ate)
                     ---
-
-                    <!-- content goes here, uses markdown -->
-
-                    <!-- images will automatically be shown, if put in images/ttt/. must match the date of the ride, in format YYYY-MM-DD. can be jpg or png -->
-
-                    ![](../images/ttt/{date}.png)
-                    ![](../images/ttt/{date}.jpg)
                 '''
                 f.write(template) 
             print(f'created {filename} ride number {i}')

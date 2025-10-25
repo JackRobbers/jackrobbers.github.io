@@ -27,7 +27,19 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 
 {{ ride.path | date: '%d/%m/%Y'}}
 
-{{ ride.content }}
+{{ ride.content}}
+
+{% assign date = ride.path | split: "/" | last | split: "."  | first | %}
+{% assign jpg_path = "/images/ttt/" | append: date | append: ".jpg" %}
+{% assign jpg = site.static_files | where: "path", jpg_path | first %}
+{% if jpg %}
+![](..{{jpg_path}})
+{% endif %}
+{% assign png_path = "/images/ttt/" | append: date | append: ".png" %}
+{% assign png = site.static_files | where: "path", png_path | first %}
+{% if png %}
+![](..{{png_path}})
+{% endif %}
 
 ---
 {% endfor %}
