@@ -23,8 +23,9 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 
 {% for ride in site.ttt reversed %}
 
-{{ forloop.rindex }} **{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}**   
-{{ ride.path | date: '%d/%m/%Y'}} 
+{{ forloop.rindex }} **{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %} 
+
+{{ ride.path | date: '%d/%m/%Y'}}
 
 {{ ride.content }}
 
