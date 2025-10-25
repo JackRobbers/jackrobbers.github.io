@@ -19,7 +19,7 @@ We always meet at 6pm at Redfern Park.
 
 We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:"swim","true" | size  }} times.
 
-# Ride Archive
+# Ride Archive 
 
 {% for ride in site.ttt reversed %}
 
