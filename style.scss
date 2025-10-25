@@ -12,6 +12,10 @@ hr {
     color: $site-red
 }
 
+img {
+    width: 35%;
+}
+
 @media only screen and (max-width: 1000px) {
   h1 {
     font-size: 4rem;
@@ -22,6 +26,10 @@ hr {
   h2,
   h3 {
     font-size: 3rem;
+  }
+
+  img {
+    width: 100%
   }
 }
 
@@ -45,11 +53,6 @@ hr {
     margin-top: 0;
   }
 }
-
-// img {
-//     width: 25%;
-//     border: $site-red solid 5px;
-// }
 
 body {
   margin: 0;
