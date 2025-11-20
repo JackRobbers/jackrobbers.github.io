@@ -112,5 +112,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll
 
+RUBY VERSION
+  ruby 3.3.8
+
 BUNDLED WITH
-   2.5.1
+  4.0.0.beta1
