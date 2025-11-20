@@ -4,7 +4,7 @@
 from datetime import timedelta, datetime
 from os import path
 
-current_date = datetime(2023, 11, 2)
+current_date = datetime(2023, 11, 2, 18, 0, 0)
 week = timedelta(7)
 
 if __name__ == "__main__":
