@@ -23,10 +23,9 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 
 <div class="flex-container" markdown=1>
 
-
 {% for ride in site.ttt reversed %}
 
-<div markdown=1>
+<div markdown=1 id="{{date}}">
 
 
 {{ forloop.rindex }} **{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %} 
@@ -34,14 +33,19 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 {{ ride.path | date: '%d/%m/%Y' }}
 
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
-{% assign jpg_path = "/images/ttt/" | append: date | append: ".jpg" %}
-{% assign jpg = site.static_files | where: "path", jpg_path | first %}
-{% assign png_path = "/images/ttt/" | append: date | append: ".png" %}
-{% assign png = site.static_files | where: "path", png_path | first %}
-{% if jpg %}
-![](..{{jpg_path}})
-{% elsif png %}
-![](..{{png_path}})
+{% assign image_path = "/images/ttt/" | append: date %}
+{{ png_path}}
+{% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
+{% if images %}
+
+<div markdown=1 class="horizontal-images" >
+
+{% for i in images  %}
+![](..{{i.path}})
+{% endfor %}
+
+</div>
+
 {% else %}
 ## ...
 {% endif %}
