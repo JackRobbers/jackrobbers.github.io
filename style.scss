@@ -7,29 +7,13 @@ $site-white: #ffffff;
 .flex-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  // grid-auto-rows: min-content;
-  width: 95%;
+  gap: 10px;
   > div {
     border-bottom: 5px solid;
     border-color: $site-red;
-    margin: 10px;
-    width: min-content;
-    max-width: min-content;
-    min-width: 300px;
+    margin-top: 10px;
   }
 }
-
-// doesn't work since auto-fill doesn't work with auto-fill
-.horizontal-images {
-  // display: flex;
-  gap: 10px;
-  width: min-content;
-  img {
-    min-width: 300px;
-    width: 300px;
-  }
-}
-
 
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +21,10 @@ $site-white: #ffffff;
 }
 
 img {
+  display: block;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-device-width: 1000px) {
@@ -83,13 +70,9 @@ img {
   }
 }
 
-body {
-  margin: 0;
-}
-
 main {
   margin: auto;
-  width: 80%;
+  width: 95%;
   h1 {
     margin-bottom: 0.25rem;
     color: $site-red;
