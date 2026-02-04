@@ -1,0 +1,27 @@
+current directory: /home/jack/Programming/jackrobbers.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+/home/jack/.rvm/rubies/ruby-3.4.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/jack/Programming/jackrobbers.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260204-68038-slkhcv sitelibdir\=./.gem.20260204-68038-slkhcv clean
+
+current directory: /home/jack/Programming/jackrobbers.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260204-68038-slkhcv sitelibdir\=./.gem.20260204-68038-slkhcv
+compiling ruby_http_parser.c
+ruby_http_parser.c: In function ‘Parser_execute’:
+ruby_http_parser.c:373:17: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+  373 |     if (nparsed < len)
+      |                 ^
+At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+
+current directory: /home/jack/Programming/jackrobbers.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260204-68038-slkhcv sitelibdir\=./.gem.20260204-68038-slkhcv install
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20260204-68038-slkhcv
+
+current directory: /home/jack/Programming/jackrobbers.github.io/vendor/bundle/ruby/3.4.0/gems/http_parser.rb-0.8.1/ext/ruby_http_parser
+make DESTDIR\= sitearchdir\=./.gem.20260204-68038-slkhcv sitelibdir\=./.gem.20260204-68038-slkhcv clean
