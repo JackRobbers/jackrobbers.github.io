@@ -17,7 +17,11 @@ Thick/Thicc Thigh Thursday is a weekly bike ride.
 
 We always meet at 6pm at Redfern Park.
 
-We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:"swim","true" | size  }} times.
+We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times.
+
+
+{% assign imageCount = 0 %}
+
 
 # Ride Archive 
 
@@ -36,7 +40,8 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 {% assign image_path = "/images/ttt/" | append: date %}
 {{ png_path}}
 {% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
-{% if images %}
+{% if images.size > 0 %}
+
 
 <div markdown=1 class="horizontal-images" >
 
@@ -48,6 +53,7 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 
 {% else %}
 ## ...
+{% assign imageCount = imageCount | plus: 1 %}
 {% endif %}
 
 {{ ride.content}}
@@ -57,3 +63,5 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 {% endfor %}
 
 </div>
+
+This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides are missing details and {{ imageCount }} rides are missing posters. If you remember where a ride went or have a poster please let me know!
