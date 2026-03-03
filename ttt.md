@@ -43,12 +43,10 @@ We've ridden {{ site.ttt | size }} times and swum at least {{  site.ttt | where:
 {% if images.size > 0 %}
 
 
-<div markdown=1 class="horizontal-images" >
-
+<div>
 {% for i in images  %}
-![](..{{i.path}})
+<img src="..{{i.path}}">
 {% endfor %}
-
 </div>
 
 {% else %}

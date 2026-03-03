@@ -9,9 +9,27 @@ $site-white: #ffffff;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   > div {
-    border-bottom: 5px solid;
+    border-bottom: 0.3em solid;
     border-color: $site-red;
-    margin-top: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p:nth-child(1) {
+      // padding-top: ;
+      min-height: 40px;
+      // background-color: $site-red;
+    }
+    p:nth-child(2) {
+      margin-bottom: 16px;
+    }
+    
   }
 }
 
@@ -42,7 +60,10 @@ img {
   .flex-container {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-
+    > div {
+      border-bottom: 0.6em solid;
+      border-color: $site-red;
+    }
   }
   body main {
     width: 95%;
