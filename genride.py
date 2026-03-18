@@ -1,6 +1,8 @@
 # generates template md files for rides
 # rerun to add any missing weeks
 
+BASE_PATH = "_ttt"
+
 from datetime import timedelta, datetime
 from os import path
 
@@ -10,7 +12,7 @@ week = timedelta(7)
 
 def make_ride(current_date, name="???"):
     date = f'{datetime.strftime(current_date, "%Y-%m-%d")}'
-    filename = f'{date}.md'
+    filename = f'{BASE_PATH}/{date}.md'
     if path.isfile(filename):
         print(filename, 'already exists')
     else:
