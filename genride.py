@@ -6,7 +6,7 @@ BASE_PATH = "_ttt"
 from datetime import timedelta, datetime
 from os import path
 
-start_date = datetime(2023, 11, 2, 18, 0, 0)
+start_date = datetime(2023, 11, 2, 6, 0, 0)
 current_date = start_date
 week = timedelta(7)
 
