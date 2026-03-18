@@ -46,7 +46,7 @@ jobs:
         with:
           python-version: '3.10'
       - name: Run Genride
-        run: python3 genride.yp
+        run: python3 genride.py
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
