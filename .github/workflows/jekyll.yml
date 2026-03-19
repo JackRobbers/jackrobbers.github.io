@@ -11,7 +11,8 @@ on:
   push:
     branches: ["main"]
   schedule:
-    - cron: "0 18 * * 4"
+    # subtract 11 from time, actions are utc
+    - cron: "0 7 * * 4"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

@@ -4,7 +4,8 @@
 BASE_PATH = "_ttt"
 
 from datetime import timedelta, datetime
-from os import path
+from os import os, path
+os.environ['TZ'] = 'Australia/Sydney'
 
 start_date = datetime(2023, 11, 2, 6, 0, 0)
 current_date = start_date
