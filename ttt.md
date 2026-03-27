@@ -9,12 +9,12 @@ layout: default
 {% assign date_unix = ride.path | date: '%s' %}
 {% if date_unix < today %}
 {% assign rides = rides | plus: 1 %}
-{% endif %}
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
 {% assign image_path = "/images/ttt/" | append: date %}
 {% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
 {% if images.size == 0 %}
 {% assign missingImageCount = missingImageCount | plus: 1 %}
+{% endif %}
 {% endif %}
 {% endfor %}
 
@@ -50,10 +50,6 @@ We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","tr
 <img src="..{{i.path}}">
 {% endfor %}
 </div>
-
-{% else %}
-## ...
-{% assign imageCount = imageCount | plus: 1 %}
 {% endif %}
 
 {{ ride.content}}
@@ -92,10 +88,6 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 <img src="..{{i.path}}">
 {% endfor %}
 </div>
-
-{% else %}
-## ...
-{% assign imageCount = imageCount | plus: 1 %}
 {% endif %}
 
 {{ ride.content}}
