@@ -14,7 +14,7 @@ def make_ride(current_date, name="???"):
     date = f'{datetime.strftime(current_date, "%Y-%m-%d")}'
     filename = f'{BASE_PATH}/{date}.md'
     if path.isfile(filename):
-        print(filename, 'already exists')
+        print(".", end="")
     else:
         with open(filename, 'w') as f:
             template = f'''---
@@ -23,7 +23,7 @@ swim: ??? # (did you swim? yes/no)
 venue: # (where you ended up or ate)
 ---'''
             f.write(template) 
-        print(f'created {filename}')
+        print(f'\ncreated {filename}')
 
 if __name__ == "__main__":
     i = 1
@@ -38,3 +38,4 @@ if __name__ == "__main__":
     # multiples of 50
     # birthday
     make_ride(start_date +  timedelta(weeks=52 * (datetime.now().year - start_date.year)), "3rd Birthday")
+    print()
