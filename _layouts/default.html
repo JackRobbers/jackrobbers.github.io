@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <title>{{ page.title }}</title>
-
+        {% if page.icon %}
+          <link rel="icon" type="image/x-icon" href={{page.icon}}>
+        {% endif %}
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>

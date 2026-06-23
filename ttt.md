@@ -1,5 +1,7 @@
 ---
 layout: default
+icon: /images/ttt/favicon.ico
+title: TTT
 ---
 <!-- compute some stats -->
 {% assign today = 'now' | date: '%s' %}
