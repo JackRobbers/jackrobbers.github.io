@@ -3,6 +3,16 @@ layout: default
 icon: /images/ttt/favicon.ico
 title: TTT
 ---
+
+<!-- TODOS:
+        Give anchors to rides so they can be linked to
+        Think about making pages for each ride
+        Publish minutes
+
+ -->
+
+ 
+
 <!-- compute some stats -->
 {% assign today = 'now' | date: '%s' %}
 {% assign missingImageCount = 0 %}
@@ -20,9 +30,7 @@ title: TTT
 {% endif %}
 {% endfor %}
 
-Thick/Thicc Thigh Thursday is a weekly bike ride.
-
-We always meet at 6pm at Redfern Park.
+{{ site.ttt_description }}
 
 We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times.
 

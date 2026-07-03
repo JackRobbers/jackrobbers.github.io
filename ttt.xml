@@ -1,0 +1,28 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+    <channel>
+        <title>TTT</title>
+        <description>{{ site.ttt_description }}</description>		
+        <link>{{ site.url }}</link>
+        <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+        {% assign rides = site.ttt | reverse %}
+        <lastBuildDate>{% for ride in rides limit:1 %}{{ ride.path | date_to_rfc822 }}{% endfor %}</lastBuildDate>
+        {% for ride in rides limit:10 %}
+            {% assign date_unix = ride.path | date: '%s' %}
+            {% assign date_nice =  ride.path | date: '%d/%m/%Y' %}
+            <item>
+                <title>{{ ride.route }} {{ date_nice }}</title>
+                <description>{{ ride.content | xml_escape }}</description>
+                <pubDate>{{ ride.path | date_to_rfc822 }}</pubDate>
+                <link>{{ site.url }}/ttt</link>
+                <guid isPermaLink="true">{{ site.url }}/ttt</guid>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>

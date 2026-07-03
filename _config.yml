@@ -5,5 +5,10 @@ defaults:
     values:
       layout: "blog"
 
+ttt_description: |
+  Thick/Thicc Thigh Thursday is a weekly bike ride.
+
+  We always meet at 6pm at Redfern Park.
+
 collections:
   - ttt
