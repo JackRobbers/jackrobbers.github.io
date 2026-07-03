@@ -8,10 +8,11 @@ title: TTT
         Give anchors to rides so they can be linked to
         Think about making pages for each ride
         Publish minutes
+        Get images to show from rss and trial updating
 
  -->
 
- 
+
 
 <!-- compute some stats -->
 {% assign today = 'now' | date: '%s' %}
@@ -32,7 +33,7 @@ title: TTT
 
 {{ site.ttt_description }}
 
-We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times.
+We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times. You can subscribe to updates using [rss](/ttt.xml), calendar support coming at some point.
 
 
 
