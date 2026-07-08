@@ -33,7 +33,9 @@ title: TTT
 
 {{ site.ttt_description }}
 
-We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times. You can subscribe to updates using [rss](/ttt.xml), calendar support coming at some point.
+We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times. 
+
+You can subscribe to updates using [rss](/ttt.xml), calendar support coming at some point.
 
 
 
