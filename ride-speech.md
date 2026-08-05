@@ -13,6 +13,7 @@ For busy and tricky spots on routes think about splitting into smaller groups (e
   * Ride every week, same place same time
   * No one left behind
   * Where to hear about upcoming rides (insta and website)
+  * That anyone can organise a ride and who to talk to about it (current thigh master)
 
 * Where you're going
 
