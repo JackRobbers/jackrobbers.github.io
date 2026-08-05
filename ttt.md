@@ -7,7 +7,6 @@ title: TTT
 <!-- TODOS:
         Give anchors to rides so they can be linked to
         Think about making pages for each ride
-        Publish minutes
         Get images to show from rss and trial updating
 
  -->
@@ -36,6 +35,8 @@ title: TTT
 We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times. 
 
 You can subscribe to updates using [rss](/ttt.xml), calendar support coming at some point.
+
+If you're running a big ride or there's heaps of new people you should say something like [this](/ride-speech)
 
 
 
