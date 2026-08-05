@@ -23,6 +23,12 @@ For busy and tricky spots on routes think about splitting into smaller groups (e
 
 * The distance and if there's public transport back
 
+* Signals 
+  * Turning
+  * Bike up!
+  * Car back!
+  * Clear!
+
 * Who's at the back / ass [needed for 10+ people]
 
 * Who's on corners [need 1 for 20+ people, 2 for 30+ people...]
