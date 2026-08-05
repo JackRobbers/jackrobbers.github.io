@@ -1,5 +1,7 @@
 ---
+layout: default
 ---
+
 
 For big groups you should also have some buddies for new people and sending the route to regulars.
 
