@@ -3,7 +3,9 @@ layout: default
 ---
 
 
-For big groups you should also have some buddies for new people and sending the route to regulars.
+Consider sending/discussing the exact route with regulars.
+
+Try to talk to and ride with new people
 
 For busy and tricky spots on routes think about splitting into smaller groups (e.g top of hill after queens park)
 
