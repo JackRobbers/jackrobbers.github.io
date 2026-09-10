@@ -38,6 +38,7 @@ You can subscribe to updates using [rss](/ttt.xml), calendar support coming at s
 
 If you're running a big ride or there's heaps of new people you should say something like [this](/ride-speech)
 
+<a href="#stickers" class="button">Take me to the stickers!</a>
 
 
 # Upcoming Rides
@@ -111,4 +112,21 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 {% endif %}
 {% endfor %}
 
+</div>
+
+# Stickers
+
+{% assign image_path = "/images/stickers/" %}
+{% assign stickers = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" %}
+
+<div class="flex-container" markdown=1>
+
+{% for sticker in stickers %}
+<div markdown = 1>
+
+# {{ sticker.name }}
+<img src="{{sticker.path}}">
+
+</div>
+{% endfor %}
 </div>

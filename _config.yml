@@ -11,4 +11,7 @@ ttt_description: |
   We always meet at 6pm at Redfern Park, regardless of the weather.
 
 collections:
-  - ttt
+  ttt:
+    output: false
+  stickers:
+    output: true
