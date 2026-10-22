@@ -77,7 +77,7 @@ If you're running a big ride or there's heaps of new people you should say somet
 </div>
 
 # Ride Archive 
-This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides are missing details and {{ missingImageCount }} rides are missing posters. If you remember where a ride went or have a poster please let me know!
+This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides are missing details and up to {{ missingImageCount }} rides are missing flyers (some weeks may not have had them). If you remember where a ride went or have a poster please let me know!
 
 <div class="flex-container" markdown=1>
 
