@@ -105,6 +105,10 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 </div>
 {% endif %}
 
+
+{% if ride.flyer != no %}
+No Flyer was made
+{% endif %}
 {{ ride.content}}
 
 </div>
