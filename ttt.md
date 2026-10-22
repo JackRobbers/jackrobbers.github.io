@@ -18,6 +18,7 @@ title: TTT
 {% assign missingImageCount = 0 %}
 {% assign rides = 0 %}
 {% for ride in site.ttt %}
+{% if ride.flyer == none %}
 {% assign date_unix = ride.path | date: '%s' %}
 {% if date_unix < today %}
 {% assign rides = rides | plus: 1 %}
@@ -26,6 +27,7 @@ title: TTT
 {% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
 {% if images.size == 0 %}
 {% assign missingImageCount = missingImageCount | plus: 1 %}
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -106,8 +108,8 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 {% endif %}
 
 
-{% if ride.flyer != no %}
-No Flyer was made
+{% if ride.flyer != none %}
+There was no flyer
 {% endif %}
 {{ ride.content}}
 
