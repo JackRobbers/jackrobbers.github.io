@@ -7,9 +7,34 @@
    width="324.78397"
    height="236.4411"
    viewBox="0 0 324.78397 236.4411"
+   sodipodi:docname="sticker_globe.svg"
+   inkscape:export-filename="sticker_globe_jack_edit.svg"
+   inkscape:export-xdpi="70"
+   inkscape:export-ydpi="70"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.5093603"
+     inkscape:cx="162.39198"
+     inkscape:cy="118.35686"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g224" />
   <defs
      id="defs1">
     <color-profile
@@ -34,10 +59,14 @@
   </defs>
   <g
      id="g1"
-     transform="translate(-20.977955,-824.98773)">
+     transform="translate(-20.977955,-824.98773)"
+     inkscape:export-filename="g1.svg"
+     inkscape:export-xdpi="70"
+     inkscape:export-ydpi="70">
     <g
        id="g224"
-       transform="translate(-5.088712,20.863719)">
+       transform="translate(-5.088712,20.863719)"
+       style="display:inline">
       <g
          clip-path="url(#clipPath4)"
          id="g58">
@@ -64,22 +93,21 @@
            style="fill:#e45ab4;fill-opacity:1;fill-rule:evenodd;stroke:none"
            transform="matrix(0.13333333,0,0,-0.13333333,0,1123)"
            clip-path="url(#clipPath3)"
-           id="path58" />
+           id="path58"
+           inkscape:export-filename="path58.svg"
+           inkscape:export-xdpi="70"
+           inkscape:export-ydpi="70" />
         <path
            style="display:none;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            d="m 112.71999,964.02474 c 0,0 79.0975,-34.41372 150.98794,0.36035"
            id="path224" />
       </g>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:66.6667px;line-height:1.25;font-family:Caladea;-inkscape-font-specification:'Caladea, Bold';font-variant-ligatures:normal;font-variant-caps:all-small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:5px;word-spacing:-5px;text-anchor:middle;fill:#7f4aaa;fill-opacity:1;stroke:#7f4aaa;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+      <path
+         d="m 132.17382,954.36509 q 2.69876,-1.04618 4.21406,-3.04658 l -8.15672,-34.65298 q -2.25599,0.59951 -5.17998,1.56172 l -1.28259,0.37039 q -0.70224,1.67204 -0.912,3.98154 -0.16014,2.22933 0.21793,4.12651 -1.12225,0.46963 -2.29033,0.74457 -1.03829,0.2444 -2.1873,0.30939 l -2.87166,-12.19992 q 10.05466,-2.09275 18.2961,-4.03264 4.93188,-1.16088 10.30275,-2.49358 5.42048,-1.41287 7.93604,-2.07348 l 2.87166,12.19993 q -0.99247,0.43907 -2.09566,0.69875 -1.16807,0.27494 -2.38198,0.35521 -0.76364,-2.08038 -1.87081,-3.87443 -1.05756,-1.87422 -2.22194,-3.0384 -3.35159,0.30948 -6.8062,1.05415 l 8.172,34.71788 q 1.66825,0.97709 5.32523,0.80119 l 0.17202,2.76754 -18.88393,4.44496 z m 43.9613,-7.87464 q 2.8535,-0.48505 4.73841,-2.14183 l -1.05845,-35.58428 q -2.33032,0.13601 -5.3877,0.49374 l -1.33077,0.10628 q -1.02258,1.49773 -1.69018,3.71856 -0.60295,2.15221 -0.6121,4.08668 -1.19353,0.23559 -2.393,0.27126 -1.06619,0.0317 -2.20497,-0.1345 l -0.37264,-12.5278 q 10.27006,-0.0387 18.73299,-0.29042 5.06443,-0.15064 10.59334,-0.3818 5.59356,-0.29977 8.19043,-0.44371 l 0.37264,12.5278 q -1.06025,0.23163 -2.19309,0.26532 -1.19947,0.0357 -2.40488,-0.12855 -0.33196,-2.1911 -1.0578,-4.1704 -0.66118,-2.04791 -1.56909,-3.42153 -3.34573,-0.36735 -6.87949,-0.32894 l 1.06043,35.65092 q 1.43903,1.29112 5.05726,1.85046 l -0.38519,2.746 -19.39144,0.5768 z m 44.74439,1.51085 q 2.88584,0.22303 5.1169,-0.92593 l 7.62204,-34.7745 q -2.2935,-0.43446 -5.34615,-0.83055 l -1.31669,-0.22035 q -1.35595,1.20428 -2.5433,3.19626 -1.10796,1.94113 -1.58701,3.81536 -1.215,-0.0616 -2.38717,-0.31848 -1.04193,-0.22838 -2.10617,-0.66639 l 2.68342,-12.24271 q 9.97151,2.4586 18.24185,4.27133 4.94918,1.08478 10.36847,2.20436 5.4987,1.06873 8.05268,1.56028 l -2.68341,12.24271 q -1.08476,-0.033 -2.19181,-0.27567 -1.17217,-0.25692 -2.30153,-0.7092 0.21054,-2.20608 -0.0125,-4.30244 -0.14361,-2.14721 -0.69044,-3.7003 -3.15612,-1.16952 -6.59325,-1.99113 l -7.63631,34.83962 q 1.08207,1.60216 4.45586,3.02413 l -1.04106,2.57004 -18.95015,-4.15358 z"
          id="text224"
-         transform="translate(0,-2.499065)"><textPath
-           xlink:href="#path224"
-           startOffset="50%"
-           id="textPath224"><tspan
-             id="tspan224"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:66.6667px;font-family:Caladea;-inkscape-font-specification:'Caladea, Bold';font-variant-ligatures:normal;font-variant-caps:all-small-caps;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#7f4aaa;fill-opacity:1;stroke:#7f4aaa;stroke-width:5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1">TTT</tspan></textPath></text>
+         style="font-weight:bold;font-size:66.6667px;line-height:1.25;font-family:Caladea;-inkscape-font-specification:'Caladea, Bold';font-variant-caps:all-small-caps;text-align:center;letter-spacing:5px;word-spacing:-5px;text-anchor:middle;fill:#7f4aaa;stroke:#7f4aaa;stroke-width:5;stroke-linejoin:round"
+         transform="translate(0,-2.499069)"
+         aria-label="TTT" />
     </g>
   </g>
 </svg>
