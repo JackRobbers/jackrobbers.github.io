@@ -52,7 +52,7 @@ If you're running a big ride or there's heaps of new people you should say somet
 
 <div markdown=1 id="{{date}}">
 
-{{ ride.path | date: '%U' | plus: 114}}
+{% assign myDate=ride.path | date: "%s" %}{{ '2023-11-02' | date: "%s" | minus: myDate | divided_by: 3600 | divided_by: 24 | divided_by: -7 | plus: 1 | round }}
 **{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %} 
 
 {{ ride.path | date: '%d/%m/%Y' }}
