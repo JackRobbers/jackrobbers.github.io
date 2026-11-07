@@ -11,9 +11,8 @@ title: TTT
 
  -->
 
-
-
 <!-- compute some stats -->
+
 {% assign today = 'now' | date: '%s' %}
 {% assign missingImageCount = 0 %}
 {% assign rides = 0 %}
@@ -34,13 +33,14 @@ title: TTT
 
 {{ site.ttt_description }}
 
-We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times. 
+We've ridden {{ rides }} times and swum at least {{  site.ttt | where:"swim","true" | size }} times.
 
 You can subscribe to updates using [rss](/ttt.xml), calendar support coming at some point.
 
 If you're running a big ride or there's heaps of new people you should say something like [this](/ride-speech)
 
 # Upcoming Rides
+
 <div class="flex-container" markdown=1>
 
 {% for ride in site.ttt %}
@@ -50,7 +50,7 @@ If you're running a big ride or there's heaps of new people you should say somet
 <div markdown=1 id="{{date}}">
 
 {% assign myDate=ride.path | date: "%s" %}{{ '2023-11-02' | date: "%s" | minus: myDate | divided_by: 3600 | divided_by: 24 | divided_by: -7 | plus: 1 | round }}
-**{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %} 
+**{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %}
 
 {{ ride.path | date: '%d/%m/%Y' }}
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
@@ -75,7 +75,8 @@ If you're running a big ride or there's heaps of new people you should say somet
 
 </div>
 
-# Ride Archive 
+# Ride Archive
+
 This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides are missing details and up to {{ missingImageCount }} rides are missing flyers (some weeks may not have had them). If you remember where a ride went or have a poster please let me know!
 
 <div class="flex-container" markdown=1>
@@ -88,7 +89,7 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 <div markdown=1 id="{{date}}">
 
 {{ forloop.rindex }}
-**{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %} 
+**{{ ride.route }}{% if ride.venue %} + {% endif %}{{ ride.venue }}** {% if ride.swim == true %}🏊{% endif %}
 
 {{ ride.path | date: '%d/%m/%Y' }}
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
@@ -104,7 +105,6 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 </div>
 {% endif %}
 
-
 {% if ride.flyer != none %}
 There was no flyer
 {% endif %}
@@ -113,5 +113,6 @@ There was no flyer
 </div>
 
 {% endif %}
+{% endfor %}
 
 </div>

@@ -37,5 +37,5 @@ if __name__ == "__main__":
     make_ride(start_date +  timedelta(weeks=milestone - 1), f'{milestone}th ride')
     # multiples of 50
     # birthday
-    make_ride(start_date +  timedelta(weeks=52 * (datetime.now().year - start_date.year)), "3rd Birthday")
+    make_ride(start_date +  timedelta(weeks=52 * (datetime.now().year - start_date.year)), "4th Birthday")
     print()
