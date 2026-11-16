@@ -55,7 +55,6 @@ If you're running a big ride or there's heaps of new people you should say somet
 {{ ride.path | date: '%d/%m/%Y' }}
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
 {% assign image_path = "/images/ttt/" | append: date %}
-{{ png_path}}
 {% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
 {% if images.size > 0 %}
 
@@ -94,7 +93,6 @@ This archive is incomplete. {{ site.ttt | where:"route","???" | size }} rides ar
 {{ ride.path | date: '%d/%m/%Y' }}
 {% assign date = ride.path | split: "/" | last | split: "."  | first %}
 {% assign image_path = "/images/ttt/" | append: date %}
-{{ png_path}}
 {% assign images = site.static_files | where_exp: "file", "file.path contains image_path" | sort: "path" | reverse %}
 {% if images.size > 0 %}
 
