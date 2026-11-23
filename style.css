@@ -1,8 +1,28 @@
 ---
 ---
 
-$site-red: #e03f3f;
-$site-white: #ffffff;
+body {
+    --site-red: #e03f3f;
+    --site-white: #ffffff;
+    --site-bkg: #ffffff;
+    --site-text: #0000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --site-red: #e03f3f;
+    --site-white: #ffffff;
+    --site-bkg: #000000;
+    --site-text: #ffffff;
+  }
+}
+
+body {
+  background-color: var(--site-bkg);
+  p, h1 {
+    color: var(--site-text);
+  }
+}
 
 .flex-container {
   display: grid;
@@ -10,7 +30,7 @@ $site-white: #ffffff;
   gap: 10px;
   > div {
     border-bottom: 0.3rem solid;
-    border-color: $site-red;
+    border-color: var(--site-red);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -20,9 +40,7 @@ $site-white: #ffffff;
     }
 
     p:nth-child(1) {
-      // padding-top: ;
       min-height: 40px;
-      // background-color: $site-red;
     }
     p:nth-child(2) {
       margin-top: 0px;
@@ -32,14 +50,11 @@ $site-white: #ffffff;
       margin-top: 0px;
       padding-bottom: 16px;
     }
-    
-    
   }
 }
 
 * {
   font-family: Arial, Helvetica, sans-serif;
-  // margin: 0px;
 }
 
 img {
@@ -65,7 +80,6 @@ img {
     margin-top: 0.25rem;
     margin-bottom: 0;
   }
-  // makes the date wrap first
   div {
     display: flex;
     align-items: flex-end;
@@ -82,27 +96,25 @@ main {
   width: 95%;
   h1 {
     margin-bottom: 0.25rem;
-    color: $site-red;
+    color: var(--site-red);
   }
-
-  
 }
 
 nav {
   margin: auto;
   margin-top: 1em;
   text-align: center;
-
 }
 
-nav > a, .button {
-    text-decoration: none;
-    color: $site-white;
-    font-size: 1.5em;
-    background-color: $site-red;
-    border-radius: 10px;
-    padding: 0.2em;
-    margin: 0.2em;
+nav > a,
+.button {
+  text-decoration: none;
+  color: var(--site-white);
+  font-size: 1.5em;
+  background-color: var(--site-red);
+  border-radius: 10px;
+  padding: 0.2em;
+  margin: 0.2em;
 }
 
 .columns-list {
